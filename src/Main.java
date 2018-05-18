@@ -9,7 +9,8 @@ public class Main {
 
     public static void main(String[] args) {
         double type;         
-	
+	do
+        {
 	    System.out.println("MAIN MENU");
 	    System.out.println("=========");
 	    System.out.println("1. Convert to a Level grade");
@@ -24,9 +25,7 @@ public class Main {
 	    if (type == 2) { 
                 percentageToLevel();
             }
-            if (type == 3) {
-                System.exit(0);
-            }
+        } while (type != 3);
     }
 
     // Conversion function percentage to Alpha
